@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caixa PDV</title>
 
-    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/caixa.css" />
   </head>
   <body>
     <div class="container">
@@ -15,6 +15,7 @@
         type="text"
         id="codigoBarra"
         placeholder="Passe o código de barras"
+        autofocus
       />
 
       <button onclick="buscarProduto()">Adicionar</button>
@@ -25,7 +26,9 @@
         <thead>
           <tr>
             <th>Produto</th>
-            <th>Preço</th>
+            <th>Qtd</th>
+            <th>Preço Unit.</th>
+            <th>Subtotal</th>
           </tr>
         </thead>
 
@@ -34,7 +37,9 @@
 
       <h2 id="total">Total: R$ 0,00</h2>
 
-      <button onclick="finalizarVenda()">Finalizar Venda</button>
+      <button class="finalizar" onclick="finalizarVenda()">
+        Finalizar Venda
+      </button>
     </div>
 
     <script src="../js/caixa.js"></script>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categorias</title>
+
+    <link rel="stylesheet" href="../css/categorias.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏷 Cadastro de Categorias</h1>
+
+      <form id="formCategoria">
+        <input
+          type="text"
+          id="nomeCategoria"
+          placeholder="Nome da Categoria"
+          required
+        />
+
+        <button type="submit">Salvar Categoria</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Categoria</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody id="listaCategorias"></tbody>
+      </table>
+    </div>
+
+    <script src="../js/categorias.js"></script>
+  </body>
+</html>

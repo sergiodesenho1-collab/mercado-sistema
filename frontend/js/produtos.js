@@ -1,6 +1,10 @@
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  let editando = null;
 
+  carregarCategorias();
+
+  renderizar();
   const produto = {
     codigo: document.getElementById("codigo").value,
     nome: document.getElementById("nome").value,
